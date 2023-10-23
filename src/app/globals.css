@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer componets {
+    .header-nav-btn {
+        @apply bg-amber-50 rounded-md p-2 m-2.5 font-bold text-black hover:bg-blue-50
+    }
+}
+
+* {
+    font-family: Pretendard, sans-serif;
+}
