@@ -5,6 +5,9 @@ const config = {
     ],
     theme: {
         extend: {
+            width: {
+                '1200': '1200px'
+            },
             colors: {
                 fire: '#FFFFFF',
                 water: '#FFFFFF',
