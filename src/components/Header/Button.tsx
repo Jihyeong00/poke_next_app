@@ -8,10 +8,7 @@ interface IHeaderButton {
 
 const HeaderButton = (props: IHeaderButton) => {
   return (
-    <Link
-      className={'header-nav-btn'}
-      href={props.href}
-    >
+    <Link className={'header-nav-btn'} href={props.href}>
       {props.title}
     </Link>
   );

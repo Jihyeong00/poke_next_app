@@ -18,7 +18,9 @@ export default function RootLayout({
       <body>
         <BackGroundImage />
         <Header />
-        <main className={'m-auto w-1200'}>{children}</main>
+        <main className={'relative z-20 m-auto min-h-[calc(100%-16px)] w-1200'}>
+          {children}
+        </main>
       </body>
     </html>
   );

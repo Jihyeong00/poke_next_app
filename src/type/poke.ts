@@ -1,3 +1,23 @@
+export type IPokeType =
+  | 'fire'
+  | 'water'
+  | 'grass'
+  | 'ice'
+  | 'fighting'
+  | 'poison'
+  | 'ground'
+  | 'flying'
+  | 'psychic'
+  | 'bug'
+  | 'rock'
+  | 'ghost'
+  | 'dragon'
+  | 'dark'
+  | 'steel'
+  | 'fairy'
+  | 'normal'
+  | 'electric';
+
 export interface IApiInfo {
   name: string;
   url: string;
@@ -97,7 +117,7 @@ export interface IPokeFormData {
     };
   };
   stats: { base_stat: number; effort: number; stat: IApiInfo };
-  types: { slot: number; type: IApiInfo }[];
+  types: { slot: number; type: { name: IPokeType; url: string } }[];
   weight: 29;
 }
 
