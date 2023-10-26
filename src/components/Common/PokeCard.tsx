@@ -29,10 +29,10 @@ const PokeCard = (props: { url: string; index: string }) => {
     >
       <div className={'absolute z-20 h-full w-full bg-white'} />
       <div
-          style={{
-            backgroundColor: typeColors[en_type[0]].background,
-            color: typeColors[en_type[0]].color,
-          }}
+        style={{
+          backgroundColor: typeColors[en_type[0]].background,
+          color: typeColors[en_type[0]].color,
+        }}
         className={`absolute right-2.5 top-2.5 z-30 px-2.5 text-xs`}
       >
         {kr_genera}
